@@ -58,13 +58,17 @@ button {
   pointer-events: none;
   transform: scale(1.25);
 }
-// .conteiner {
-//   width: 1200px;
-//   margin-left: auto;
-//   margin-right: auto;
-//   padding-left: 15px;
-//   padding-right: 15px;
-// }
+
+.conteiner {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 // .head-phrase {
 //   font-weight: bold;
 //   font-size: 36px;

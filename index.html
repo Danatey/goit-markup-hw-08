@@ -164,14 +164,31 @@
         <section class="team-section">
             <div class="conteiner">
                 <h2 class="head-phrase">Наша команда</h2>
-                <ul>
-                    <li>
+                <ul class="team-list">
+                    <li class="team-card-list">
                         <div class="team-card">
-                                <img src="./img/img.jpg" alt="Анфас Игоря Демьяненко" height="260" width="270">
+                            <picture>
+                                <source srcset="
+                                ./img/team/DemianenkoW450x1.jpg 450w, 
+                                ./img/team/DemianenkoW354x1.jpg 354w,
+                                ./img/team/DemianenkoW270x1.jpg 270w"
+                                    media="(max-width: 767px)" sizes="(min-width: 1200px) 1200px, (min-width: 800px) 90vw, 100vw" />
+                                <source srcset="https://picsum.photos/id/237/1200/400 1200w, https://picsum.photos/id/237/2400/800 2400w"
+                                    media="(min-width: 800px)" sizes="(min-width: 1200px) 1200px, (min-width: 800px) 90vw, 100vw" />
+                                <source srcset="https://picsum.photos/id/237/800/400 800w, https://picsum.photos/id/237/1600/800 1600w"
+                                    media="(min-width: 501px)" sizes="(min-width: 1200px) 1200px, (min-width: 800px) 90vw, 100vw" />
+                                <img srcset="
+                                    ./img/team/DemianenkoW450x1.jpg 450w,
+                                    ./img/team/DemianenkoW354x1.jpg 354w,
+                                    ./img/team/DemianenkoW270x1.jpg 270w" 
+                                    src="./img/team/DemianenkoW270x1.jpg" 
+                                    alt="Анфас Игоря Демьяненко"
+                                    sizes="(min-width: 0px) 450px, (min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw">
+                            </picture>
                                 <div class="comand-resume">
                                     <h3 class="comand-name">Игорь Демьяненко</h3>
                                     <p class="profession">Product Designer</p>
-                                    <ul class="team-list">
+                                    <ul class="team-list-personal">
                                         <li>
                                             <div>
                                                 <a href="#" class="team-cards">
@@ -212,13 +229,13 @@
                                 </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="team-card-list">
                         <div class="team-card">
                                 <img src="./img/img(1).jpg" alt="Анфас Ольги Репиной" height="260" width="270">
                                 <div class="comand-resume">
                                     <h3 class="comand-name">Ольга Репина</h3>
                                     <p class="profession">Frontend Developer</p>
-                                    <ul class="team-list">
+                                    <ul class="team-list-personal">
                                         <li>
                                             <div>
                                                 <a href="#" class="team-cards">
@@ -259,13 +276,13 @@
                                 </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="team-card-list">
                         <div class="team-card">
                                 <img src="./img/img(2).jpg" alt="Анфас Николая Тарасова" height="260" width="270">
                                 <div class="comand-resume">
                                     <h3 class="comand-name">Николай Тарасов</h3>
                                     <p class="profession">Marketing</p>
-                                    <ul class="team-list">
+                                    <ul class="team-list-personal">
                                         <li>
                                             <div>
                                                 <a href="#" class="team-cards">
@@ -306,13 +323,13 @@
                                 </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="team-card-list">
                         <div class="team-card">
                                 <img src="./img/img(3).jpg" alt="Анфас Михаила Ермакова" height="260" width="270">
                                 <div class="comand-resume">
                                     <h3 class="comand-name">Михаил Ермаков</h3>
                                     <p class="profession">UI Designer</p>
-                                    <ul class="team-list">
+                                    <ul class="team-list-personal">
                                         <li>
                                             <div>
                                                 <a href="#" class="team-cards">
@@ -489,7 +506,6 @@
             </button>
             <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
             <form name="User-information">
-                <label for="name" class="input-title">Имя</label>
                 <div class="input-conteiner">
                     <input type="text" name="name" id="name" placeholder=" ">
                     <div class="icon-conteiner">
@@ -497,8 +513,8 @@
                             <use href="./img/symbol-defs.svg#icon-person"></use>
                         </svg>
                     </div>
+                    <label for="name" class="input-title">Имя</label>
                 </div>
-                <label for="tel" class="input-title">Телефон</label>
                 <div class="input-conteiner">
                     <input type="tel" name="tel" id="tel" placeholder=" ">
                     <div class="icon-conteiner">
@@ -506,8 +522,8 @@
                             <use href="./img/symbol-defs.svg#icon-phone"></use>
                         </svg>
                     </div>
+                    <label for="tel" class="input-title">Телефон</label>
                 </div>
-                <label for="email" class="input-title">Почта</label>
                 <div class="input-conteiner">
                     <input type="email" name="email" id="email" placeholder=" ">
                     <div class="icon-conteiner">
@@ -515,9 +531,12 @@
                             <use href="./img/symbol-defs.svg#icon-email"></use>
                         </svg>
                     </div>
+                    <label for="email" class="input-title">Почта</label>
                 </div>
-                <label for="comment" class="input-title">Комментарий</label>
-                <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                <div class="textarea-conteiner">
+                    <textarea name="comment" id="comment" rows="10" placeholder="Введите текст" class="modal-textarea"></textarea>
+                    <label for="comment" class="input-title">Комментарий</label>
+                </div>
                 <div class="checkbox-conteiner">
                     <input type="checkbox" name="agree" id="agree" class="checkbox visually-hidden">
                     <label class="agree-phrase" for="agree">

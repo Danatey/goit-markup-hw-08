@@ -1,0 +1,278 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+}
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 450px;
+  min-height: 609px;
+  border-radius: 4px;
+  padding: 40px;
+
+  background-color: $primary-color;
+
+  @media screen and(min-width:1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
+
+  a {
+    margin-left: 4px;
+
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+
+    color: $accent-color;
+    text-decoration: underline;
+  }
+  .submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 50px;
+
+    background: $accent-color;
+    border: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+    color: $primary-color;
+  }
+}
+.modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid #919191;
+  border-radius: 50%;
+
+  background-color: $primary-color;
+  cursor: pointer;
+
+  transition-property: color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+.x {
+  width: 11px;
+  height: 11px;
+}
+.form-title {
+  margin-bottom: 30px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+}
+.input-conteiner {
+  position: relative;
+  @extend %block-center;
+  margin-bottom: 28px;
+
+  input {
+    display: block;
+    min-width: 370px;
+    height: 40px;
+
+    padding-left: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition-property: border-color;
+    transition-duration: $transition-time;
+    transition-timing-function: $cubic;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-color: $accent-color;
+      outline: none;
+    }
+    @media screen and(min-width:1200px) {
+      width: 448px;
+    }
+  }
+  input:hover ~ .icon-conteiner,
+  input:focus-within ~ .icon-conteiner {
+    color: $accent-color;
+  }
+  @media screen and (max-width: 767px) {
+    input:hover ~ label,
+    input:focus-within ~ label {
+      color: $accent-color;
+    }
+  }
+}
+.icon-conteiner {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 42px;
+  height: 40px;
+
+  color: $primary-text-color;
+
+  transition-property: color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+}
+.icon-input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 18px;
+  height: 18px;
+
+  fill: currentColor;
+}
+.input-title {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  display: block;
+
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: $subsidiary-text-color;
+}
+.textarea-conteiner {
+  position: relative;
+
+  transition-property: color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+
+  @media screen and (max-width: 767px) {
+    textarea:hover ~ label,
+    textarea:focus-within ~ label {
+      color: $accent-color;
+    }
+  }
+}
+.modal-textarea {
+  position: relative;
+  resize: none;
+  display: block;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+
+  width: 370px;
+  height: 120px;
+
+  cursor: pointer;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $accent-color;
+    outline: none;
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+  @media screen and(min-width:1200px) {
+    width: 448px;
+  }
+}
+.checkbox-conteiner {
+  max-width: 425px;
+  max-height: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 31px;
+}
+.agree-phrase {
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+
+  color: $subsidiary-text-color;
+
+  &::before {
+    content: "";
+
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    background-image: url(../img/Vector.svg);
+    background-size: contain;
+
+    transition-property: background-image;
+    transition-duration: $transition-time;
+    transition-timing-function: $cubic;
+  }
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.checkbox:checked + .agree-phrase::before {
+  content: "";
+
+  display: inline-block;
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+  background-image: url(../img/icon-check.svg);
+  background-size: contain;
+}

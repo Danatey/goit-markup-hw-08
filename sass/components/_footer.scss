@@ -1,0 +1,199 @@
+.footer-section {
+  background-color: $accent-background;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-box {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    max-width: 768px;
+  }
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+.footer-contacts-box {
+  @media screen and(min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-bottom: 0;
+  }
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+
+  @media screen and(max-width: 1199px) {
+    text-align: center;
+  }
+}
+.address-list {
+  text-align: center;
+  margin-bottom: 60px;
+
+  li:not(:last-child) {
+    padding-bottom: 8px;
+  }
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0px;
+  }
+  @media screen and(min-width:1200px) {
+    text-align: start;
+  }
+}
+.footer-address {
+  font-family: inherit;
+  font-style: normal;
+  line-height: 24px;
+
+  color: $primary-color;
+}
+.footer-link {
+  line-height: 24px;
+
+  color: $text-footer-link;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+.social-list {
+  li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social-cards {
+  display: block;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  padding-top: 12px;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: $primary-color;
+
+  transition-property: background-color;
+  transition-duration: $transition-time;
+  transition-timing-function: $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.social-links {
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
+}
+// .join-check {
+//   margin-left: 93px;
+// }
+.join {
+  text-align: center;
+
+  @media screen and(min-width: 768px) {
+    margin-left: 165px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-left: 70px;
+  }
+}
+.join-phrase {
+  text-align: center;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+
+  color: $primary-color;
+
+  @media screen and(min-width:1200px) {
+    text-align: start;
+  }
+}
+.join-check {
+  input {
+    display: block;
+    @extend %block-center;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    width: 450px;
+    height: 50px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: $accent-background;
+    color: $primary-color;
+    box-sizing: border-box;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    @media screen and(min-width:1200px) {
+      width: 358px;
+      margin-bottom: 0;
+      margin-right: 12px;
+    }
+  }
+}
+.join-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and(min-width:1200px) {
+    flex-direction: row;
+  }
+}
+.button-join {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  padding-top: 10px;
+  padding-right: 29px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  background-color: $accent-color;
+
+  span {
+    margin-right: 10px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+
+    color: $primary-color;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+
+    fill: $primary-color;
+  }
+}

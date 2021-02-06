@@ -1,0 +1,46 @@
+.work {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  padding-bottom: 94px;
+}
+.we-are-working {
+  h2 {
+    margin-bottom: 50px;
+  }
+  ul {
+    display: flex;
+  }
+  .working-conteiner {
+    position: relative;
+  }
+  img {
+    display: block;
+  }
+  li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.working-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  text-align: center;
+  width: 370px;
+  height: 70px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  .pfrase {
+    margin-top: auto;
+    margin-bottom: auto;
+
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $primary-color;
+  }
+}

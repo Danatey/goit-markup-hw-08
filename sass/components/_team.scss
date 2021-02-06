@@ -1,0 +1,84 @@
+.team-section {
+  background-color: $background-additional-color;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    background-color: $primary-color;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  img {
+    display: block;
+  }
+}
+.team-card {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.comand-resume {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.comand-name {
+  margin-bottom: 10px;
+
+  text-align: center;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+}
+.profession {
+  margin-bottom: 16px;
+
+  text-align: center;
+  line-height: 19px;
+
+  color: $subsidiary-text-color;
+}
+.team-list {
+  display: flex;
+  margin-left: 32px;
+
+  li {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  a {
+    display: block;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    padding-top: 12px;
+    color: $social-link-color;
+
+    transition-property: background-color;
+    transition-duration: $transition-time;
+    transition-timing-function: $cubic;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $primary-color;
+    }
+  }
+}
+.team-links {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: auto;
+
+  fill: currentColor;
+}

@@ -10,10 +10,11 @@
     <header>
         <div class="conteiner">
             <nav class="header-nav">
-                <a href="./index.html"><span class="logo-web">Web</span><span class="studio-header">Studio</span></a>
+                <a href="./index.html" class="header-logo"><span class="logo-web">Web</span><span
+                        class="studio-header">Studio</span></a>
                 <ul class="header-link">
-                    <li><a href="./index.html" class="page-active">Студия</a></li>
-                    <li><a href="./portfolio.html" class="nav-item">Портфолио</a></li>
+                    <li><a href="./index.html" class="nav-item">Студия</a></li>
+                    <li><a href="./portfolio.html" class="page-active">Портфолио</a></li>
                     <li><a href="#" class="nav-item">Контакты</a></li>
                 </ul>
                 <button class="header-button-open">
@@ -43,8 +44,8 @@
                     <span class="close">&#10006;</span>
                 </button>
                 <ul class="header-mobile-link">
-                    <li><a href="./index.html" class="page-active">Студия</a></li>
-                    <li><a href="./portfolio.html" class="nav-item">Портфолио</a></li>
+                    <li><a href="./index.html" class="nav-item">Студия</a></li>
+                    <li><a href="./portfolio.html" class="page-active">Портфолио</a></li>
                     <li><a href="#" class="nav-item">Контакты</a></li>
                 </ul>
                 <ul class="header-mobile-address">
@@ -80,7 +81,25 @@
                         <div class="works-card">
                             <a href="#">
                                 <div class="works-image">
-                                    <img src="./img/technocrack.jpg" alt="ноутбук с сайтом" width="370" height="294">
+                                    <picture>
+                                        <source srcset="
+                                        ./img/portfolio/technocrackW370@1x.webp 1x, 
+                                        ./img/portfolio/technocrackW370@2x.webp 2x" 
+                                        media="(min-width: 1200px)" />
+                                        <source srcset="
+                                        ./img/portfolio/technocrackW354@1x.webp 1x, 
+                                        ./img/portfolio/technocrackW354@2x.webp 2x" 
+                                        media="(min-width: 768px)" />
+                                        <source srcset="
+                                        ./img/portfolio/technocrackW450@1x.webp 1x, 
+                                        ./img/portfolio/technocrackW450@2x.webp 2x" 
+                                        media="(max-width: 767px)" />
+                                        <img srcset=" 
+                                        ./img/portfolio/technocrackW354@1x.jpg 1x,
+                                        ./img/portfolio/technocrackW354@2x.jpg 2x" 
+                                        src="./img/portfolio/technocrackW354@1x.jpg"
+                                        alt="ноутбук с сайтом">
+                                    </picture>
                                     <div class="project-anonimus">
                                         <p class="no-reed-this">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -98,7 +117,25 @@
                         <div class="works-card">
                             <a href="#">
                                 <div class="works-image">
-                                    <img src="./img/new-orlean.jpg" alt="игра в баскетбол" width="370" height="294">
+                                    <picture>
+                                        <source srcset="
+                                        ./img/portfolio/new-orleanW370@1x.webp 1x, 
+                                        ./img/portfolio/new-orleanW370@2x.webp 2x" 
+                                        media="(min-width: 1200px)" />
+                                        <source srcset="
+                                        ./img/portfolio/new-orleanW354@1x.webp 1x, 
+                                        ./img/portfolio/new-orleanW354@2x.webp 2x" 
+                                        media="(min-width: 768px)" />
+                                        <source srcset="
+                                        ./img/portfolio/new-orleanW450@1x.webp 1x, 
+                                        ./img/portfolio/new-orleanW450@2x.webp 2x" 
+                                        media="(max-width: 767px)" />
+                                        <img srcset=" 
+                                        ./img/portfolio/new-orleanW354@1x.jpg 1x,
+                                        ./img/portfolio/new-orleanW354@2x.jpg 2x"
+                                        src="./img/portfolio/new-orleanW354@1x.jpg" 
+                                        alt="игра в баскетбол">
+                                    </picture>
                                     <div class="project-anonimus">
                                         <p class="no-reed-this">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -116,7 +153,25 @@
                         <div class="works-card">
                             <a href="#">
                                 <div class="works-image">
-                                    <img src="./img/seafood.jpg" alt="вкусная рыбка" width="370" height="294">
+                                    <picture>
+                                        <source srcset="
+                                        ./img/portfolio/seafoodW370@1x.webp 1x, 
+                                        ./img/portfolio/seafoodW370@2x.webp 2x" 
+                                        media="(min-width: 1200px)" />
+                                        <source srcset="
+                                        ./img/portfolio/seafoodW354@1x.webp 1x, 
+                                        ./img/portfolio/seafoodW354@2x.webp 2x" 
+                                        media="(min-width: 768px)" />
+                                        <source srcset="
+                                        ./img/portfolio/seafoodW450@1x.webp 1x, 
+                                        ./img/portfolio/seafoodW450@2x.webp 2x" 
+                                        media="(max-width: 767px)" />
+                                        <img srcset=" 
+                                        ./img/portfolio/seafoodW354@1x.jpg 1x,
+                                        ./img/portfolio/seafoodW354@2x.jpg 2x"
+                                        src="./img/portfolio/seafoodW354@1x.jpg" 
+                                        alt="вкусная рыбка">
+                                    </picture>
                                     <div class="project-anonimus">
                                         <p class="no-reed-this">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -134,7 +189,25 @@
                         <div class="works-card">
                             <a href="#">
                                 <div class="works-image">
-                                    <img src="./img/prime.jpg" alt="наушники" width="370" height="294">
+                                    <picture>
+                                        <source srcset="
+                                        ./img/portfolio/primeW370@1x.webp 1x, 
+                                        ./img/portfolio/primeW370@2x.webp 2x" 
+                                        media="(min-width: 1200px)" />
+                                        <source srcset="
+                                        ./img/portfolio/primeW354@1x.webp 1x, 
+                                        ./img/portfolio/primeW354@2x.webp 2x" 
+                                        media="(min-width: 768px)" />
+                                        <source srcset="
+                                        ./img/portfolio/primeW450@1x.webp 1x, 
+                                        ./img/portfolio/primeW450@2x.webp 2x" 
+                                        media="(max-width: 767px)" />
+                                        <img srcset=" 
+                                        ./img/portfolio/primeW354@1x.jpg 1x,
+                                        ./img/portfolio/primeW354@2x.jpg 2x" 
+                                        src="./img/portfolio/primeW354@1x.jpg"
+                                        alt="наушники">
+                                    </picture>
                                     <div class="project-anonimus">
                                         <p class="no-reed-this">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -152,7 +225,25 @@
                         <div class="works-card">
                             <a href="#">
                                 <div class="works-image">
-                                    <img src="./img/boxes.jpg" alt="коробки" width="370" height="294">
+                                    <picture>
+                                        <source srcset="
+                                        ./img/portfolio/boxesW370@1x.webp 1x, 
+                                        ./img/portfolio/boxesW370@2x.webp 2x" 
+                                        media="(min-width: 1200px)" />
+                                        <source srcset="
+                                        ./img/portfolio/boxesW354@1x.webp 1x, 
+                                        ./img/portfolio/boxesW354@2x.webp 2x" 
+                                        media="(min-width: 768px)" />
+                                        <source srcset="
+                                        ./img/portfolio/boxesW450@1x.webp 1x, 
+                                        ./img/portfolio/boxesW450@2x.webp 2x" 
+                                        media="(max-width: 767px)" />
+                                        <img srcset=" 
+                                        ./img/portfolio/boxesW354@1x.jpg 1x,
+                                        ./img/portfolio/boxesW354@2x.jpg 2x" 
+                                        src="./img/portfolio/boxesW354@1x.jpg"
+                                        alt="коробки">
+                                    </picture>
                                     <div class="project-anonimus">
                                         <p class="no-reed-this">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -170,7 +261,25 @@
                         <div class="works-card">
                             <a href="#">
                                 <div class="works-image">
-                                    <img src="./img/no-borders.jpg" alt="монитор с веб-сайтом" width="370" height="294">
+                                    <picture>
+                                        <source srcset="
+                                        ./img/portfolio/no-bordersW370@1x.webp 1x, 
+                                        ./img/portfolio/no-bordersW370@2x.webp 2x" 
+                                        media="(min-width: 1200px)" />
+                                        <source srcset="
+                                        ./img/portfolio/no-bordersW354@1x.webp 1x, 
+                                        ./img/portfolio/no-bordersW354@2x.webp 2x" 
+                                        media="(min-width: 768px)" />
+                                        <source srcset="
+                                        ./img/portfolio/no-bordersW450@1x.webp 1x, 
+                                        ./img/portfolio/no-bordersW450@2x.webp 2x" 
+                                        media="(max-width: 767px)" />
+                                        <img srcset=" 
+                                        ./img/portfolio/no-bordersW354@1x.jpg 1x,
+                                        ./img/portfolio/no-bordersW354@2x.jpg 2x" 
+                                        src="./img/portfolio/no-bordersW354@1x.jpg"
+                                        alt="монитор с веб-сайтом">
+                                    </picture>
                                     <div class="project-anonimus">
                                         <p class="no-reed-this">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -188,7 +297,25 @@
                         <div class="works-card">
                             <a href="#">
                                 <div class="works-image">
-                                    <img src="./img/limited-edition.jpg" alt="развернутый журнал" width="370" height="294">
+                                    <picture>
+                                        <source srcset="
+                                        ./img/portfolio/limited-editionW370@1x.webp 1x, 
+                                        ./img/portfolio/limited-editionW370@2x.webp 2x" 
+                                        media="(min-width: 1200px)" />
+                                        <source srcset="
+                                        ./img/portfolio/limited-editionW354@1x.webp 1x, 
+                                        ./img/portfolio/limited-editionW354@2x.webp 2x" 
+                                        media="(min-width: 768px)" />
+                                        <source srcset="
+                                        ./img/portfolio/limited-editionW450@1x.webp 1x, 
+                                        ./img/portfolio/limited-editionW450@2x.webp 2x" 
+                                        media="(max-width: 767px)" />
+                                        <img srcset=" 
+                                        ./img/portfolio/limited-editionW354@1x.jpg 1x,
+                                        ./img/portfolio/limited-editionW354@2x.jpg 2x"
+                                        src="./img/portfolio/limited-editionW354@1x.jpg" 
+                                        alt="развернутый журнал">
+                                    </picture>
                                     <div class="project-anonimus">
                                         <p class="no-reed-this">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -206,7 +333,25 @@
                         <div class="works-card">
                             <a href="#">
                                 <div class="works-image">
-                                    <img src="./img/lab.jpg" alt="бирка лаб" width="370" height="294">
+                                    <picture>
+                                        <source srcset="
+                                        ./img/portfolio/labW370@1x.webp 1x, 
+                                        ./img/portfolio/labW370@2x.webp 2x" 
+                                        media="(min-width: 1200px)" />
+                                        <source srcset="
+                                        ./img/portfolio/labW354@1x.webp 1x, 
+                                        ./img/portfolio/labW354@2x.webp 2x" 
+                                        media="(min-width: 768px)" />
+                                        <source srcset="
+                                        ./img/portfolio/labW450@1x.webp 1x, 
+                                        ./img/portfolio/labW450@2x.webp 2x" 
+                                        media="(max-width: 767px)" />
+                                        <img srcset=" 
+                                        ./img/portfolio/labW354@1x.jpg 1x,
+                                        ./img/portfolio/labW354@2x.jpg 2x"
+                                        src="./img/portfolio/labW354@1x.jpg" 
+                                        alt="бирка лаб">
+                                    </picture>
                                     <div class="project-anonimus">
                                         <p class="no-reed-this">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -224,7 +369,25 @@
                         <div class="works-card">
                             <a href="#">
                                 <div class="works-image">
-                                    <img src="./img/growing-business.jpg" alt="работа на ноутбуке" width="370" height="294">
+                                    <picture>
+                                        <source srcset="
+                                        ./img/portfolio/growing-businessW370@1x.webp 1x, 
+                                        ./img/portfolio/growing-businessW370@2x.webp 2x" 
+                                        media="(min-width: 1200px)" />
+                                        <source srcset="
+                                        ./img/portfolio/growing-businessW354@1x.webp 1x, 
+                                        ./img/portfolio/growing-businessW354@2x.webp 2x" 
+                                        media="(min-width: 768px)" />
+                                        <source srcset="
+                                        ./img/portfolio/growing-businessW450@1x.webp 1x, 
+                                        ./img/portfolio/growing-businessW450@2x.webp 2x" 
+                                        media="(max-width: 767px)" />
+                                        <img srcset=" 
+                                        ./img/portfolio/growing-businessW354@1x.jpg 1x,
+                                        ./img/portfolio/growing-businessW354@2x.jpg 2x" 
+                                        src="./img/portfolio/growing-businessW354@1x.jpg"
+                                        alt="работа на ноутбуке">
+                                    </picture>
                                     <div class="project-anonimus">
                                         <p class="no-reed-this">Технокряк это современная площадка распространения коронавируса. Компании используют эту
                                             платформу для цифрового
@@ -245,60 +408,63 @@
     <footer class="footer-section">
         <div class="conteiner">
             <div class="footer-box">
-                <div>
-                    <a href="./index.html"><span class="logo-web">Web</span><span class="studio-footer">Studio</span></a>
-                    <ul>
-                        <li>
-                            <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
-                        </li>
-                        <li>
-                            <a href="mailto:info@example.com" class="footer-link">info@example.com</a>
-                        </li>
-                        <li>
-                            <a href="tel:+380991111111" class="footer-link">+38 099 111 11 11</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="join">
-                    <h2 class="join-phrase">присоединяйтесь</h2>
-                    <ul class="social-list">
-                        <li>
-                            <div>
-                                <a href="#" class="social-cards">
-                                    <svg class="social-links">
-                                        <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#" class="social-cards">
-                                    <svg class="social-links">
-                                        <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#" class="social-cards">
-                                    <svg class="social-links">
-                                        <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <a href="#" class="social-cards">
-                                    <svg class="social-links">
-                                        <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="footer-contacts-box">
+                    <div>
+                        <a href="./index.html" class="footer-logo"><span class="logo-web">Web</span><span
+                                class="studio-footer">Studio</span></a>
+                        <ul class="address-list">
+                            <li>
+                                <address class="footer-address">г. Киев, пр-т Леси Украинки, 26</address>
+                            </li>
+                            <li>
+                                <a href="mailto:info@example.com" class="footer-link">info@example.com</a>
+                            </li>
+                            <li>
+                                <a href="tel:+380991111111" class="footer-link">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="join">
+                        <h2 class="join-phrase">присоединяйтесь</h2>
+                        <ul class="social-list">
+                            <li>
+                                <div>
+                                    <a href="#" class="social-cards">
+                                        <svg class="social-links">
+                                            <use href="./img/symbol-defs.svg#icon-instagram-2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="social-cards">
+                                        <svg class="social-links">
+                                            <use href="./img/symbol-defs.svg#icon-twitter-1"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="social-cards">
+                                        <svg class="social-links">
+                                            <use href="./img/symbol-defs.svg#icon-facebook-1"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <a href="#" class="social-cards">
+                                        <svg class="social-links">
+                                            <use href="./img/symbol-defs.svg#icon-linkedin-1"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <form name="Join" class="join-check">
                     <h2 class="join-phrase">подпишитесь на рассылку</h2>

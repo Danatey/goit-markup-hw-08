@@ -54,16 +54,16 @@ header {
   li:not(:last-child) {
     margin-right: 50px;
   }
-}
-.page-active {
-  position: relative;
-  @extend %header-text500;
+  .page-active {
+    position: relative;
+    @extend %header-text500;
 
-  color: $accent-color;
-  fill: $accent-color;
-  &::after {
-    content: "";
-    @extend %header-after-line;
+    color: $accent-color;
+    fill: $accent-color;
+    &::after {
+      content: "";
+      @extend %header-after-line;
+    }
   }
 }
 .nav-item {
@@ -148,6 +148,7 @@ header {
   }
 }
 .header-menu-mobile {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -157,6 +158,9 @@ header {
   padding: 48px 40px;
 
   background-color: $primary-color;
+  &.is-open {
+    display: block;
+  }
 }
 .header-button-close {
   @extend .header-button-open;

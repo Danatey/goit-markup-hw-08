@@ -10,9 +10,10 @@
 }
 .button-list {
   margin-bottom: 40px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     text-align: center;
   }
+
   li {
     display: inline-block;
   }
@@ -72,6 +73,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
+    justify-content: center;
 
     li {
       max-width: 354px;

@@ -17,9 +17,10 @@
                     <li><a href="./portfolio.html" class="page-active">Портфолио</a></li>
                     <li><a href="#" class="nav-item">Контакты</a></li>
                 </ul>
-                <button class="header-button-open" data-menu-button>
-                    <svg class="header-menu-icon" width="40" height="40">
-                        <use href="./img/symbol-defs.svg#icon-burger-1"></use>
+                <button tipe="button" class="header-button-open" data-menu-button>
+                    <svg class="header-menu-icon" width="40" height="40" aria-label="переключатель мобильного меню">
+                        <use class="mobile-menu-open" href="./img/symbol-defs.svg#icon-burger-1"></use>
+                        <use class="mobile-menu-clossed" href="./img/symbol-defs.svg#icon-close_40px-1"></use>
                     </svg>
                 </button>
             </nav>
@@ -40,9 +41,6 @@
                 </li>
             </ul>
             <div class="header-menu-mobile" data-menu>
-                <button class="header-button-close">
-                    <span class="close">&#10006;</span>
-                </button>
                 <ul class="header-mobile-link">
                     <li><a href="./index.html" class="nav-item">Студия</a></li>
                     <li><a href="./portfolio.html" class="page-active">Портфолио</a></li>
@@ -481,6 +479,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

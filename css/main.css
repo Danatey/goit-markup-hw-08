@@ -682,6 +682,7 @@ header .header-nav .header-logo {
   left: 0;
   bottom: 0;
   right: 0;
+  z-index: 5;
   padding: 48px 40px;
   background-color: #ffffff;
 }
@@ -1909,9 +1910,6 @@ header .header-nav .header-logo {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-right: -30px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .works-list li {
     max-width: 354px;

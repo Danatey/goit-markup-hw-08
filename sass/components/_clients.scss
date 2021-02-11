@@ -1,12 +1,6 @@
 .clients-section {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  .conteiner {
-    @media screen and(min-width:768px) and(max-width:1199px) {
-      max-width: 738px;
-    }
-  }
 }
 .clients-list {
   display: flex;
@@ -19,14 +13,13 @@
   }
   @media screen and(max-width:1199px) {
     flex-wrap: wrap;
-    margin-right: -30px;
     justify-content: center;
   }
 }
 .clients-list-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  flex-basis: calc(100% / 2 - 30px);
+  flex-basis: calc((100% - 30px) / 2);
 
   @media screen and(max-width:767px) {
     &:nth-child(2n) {
@@ -37,7 +30,7 @@
     }
   }
   @media screen and(min-width:768px) and(max-width:1199px) {
-    flex-basis: calc(100% / 3 - 30px);
+    flex-basis: calc((100% - 60px) / 3);
 
     &:nth-child(3n) {
       margin-right: 0px;

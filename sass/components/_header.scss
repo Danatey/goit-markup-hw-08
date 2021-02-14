@@ -222,6 +222,7 @@ header {
 }
 .header-mobile-social {
   display: flex;
+  flex-wrap: wrap;
 
   @extend %header-text500;
   font-size: 18px;

@@ -48,9 +48,12 @@
   }
 }
 .team-card {
+  img {
+    max-width: 100%;
+  }
   @extend %block-center;
-  width: 450px;
-  height: 622px;
+  max-width: 450px;
+  max-height: 622px;
 
   background-color: $primary-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -58,12 +61,12 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 536px;
+    max-width: 354px;
+    max-height: 536px;
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 428px;
+    max-width: 270px;
+    max-height: 428px;
   }
 }
 .comand-resume {

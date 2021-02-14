@@ -518,8 +518,10 @@ header {
   }
 }
 
-header .header-nav .header-logo {
-  margin-right: 88px;
+@media screen and (min-width: 480px) {
+  header .header-nav .header-logo {
+    margin-right: 88px;
+  }
 }
 
 .header-link {
@@ -1148,7 +1150,7 @@ header .header-nav .header-logo {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients-list {
     max-width: 738px;
   }
@@ -1162,19 +1164,30 @@ header .header-nav .header-logo {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    width: 1200px;
+  }
+}
+
 .clients-list-item {
   margin-bottom: 30px;
-  -ms-flex-preferred-size: calc((100% - 30px) / 2);
-      flex-basis: calc((100% - 30px) / 2);
 }
 
 .clients-list-item:last-child {
   margin-bottom: 0px;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .clients-list-item {
     margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients-list-item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
   .clients-list-item:nth-last-child(-n + 2) {
     margin-bottom: 0px;
@@ -1194,6 +1207,12 @@ header .header-nav .header-logo {
   }
   .clients-list-item:nth-last-child(-n + 3) {
     margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-item {
+    margin-bottom: 0;
   }
 }
 
@@ -1442,6 +1461,12 @@ header .header-nav .header-logo {
 .join-check input::placeholder {
   font-size: 16px;
   line-height: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .join-check input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

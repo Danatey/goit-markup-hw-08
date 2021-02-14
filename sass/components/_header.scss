@@ -36,9 +36,10 @@ header {
       display: flex;
       justify-content: space-between;
     }
-
-    .header-logo {
-      margin-right: 88px;
+    @media screen and (min-width: 480px) {
+      .header-logo {
+        margin-right: 88px;
+      }
     }
   }
 }
